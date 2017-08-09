@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <style>
+        div.transbox
+        {
+            margin: 75px;
+            background-color: white;
+            border: 1px solid black;
+            opacity: 0.75;
+        }
+        div.transbox h2
+        {
+            font-family: georgia;
+            text-align: center;
+        }
+        div.transbox p
+        {
+            margin: 3%;
+        }
+    </style>
+</head>
+<body style="background-image:url(AbtUsWallpaper.jpg)">
+
+    <!-- topmost navigation bar -->
+    <div id="nav-placeholder">
+    </div>
+
+    <script>
+    $(function()
+    {
+        $("#nav-placeholder").load("nav.htm");
+    });
+    </script>
+
+    <p></p>
+    <div class="background">
+        <div class="transbox">
+            <h2>About Us</h2>
+            <!-- site logo -->
+            <center>
+                <img src="cs.png">
+            </center>
+            <p><center>
+                <b>"Our mission is to ensure that nobody has a bad meal."</b>
+            </center></p>
+            <p><b>
+                CloverShack is a restaurant browsing website based out of
+                Pune, India. It was inspired by the thought of providing a
+                complete food browsing solution from the best neighbourhood
+                restaurants to the urban foodie.
+            </b></p>
+            <p>We do this by:
+            <ul type="round">
+                <li>
+                    <b>Helping people discover great places around them:</b>
+                    Our team gathers information from every restaurant on a
+                    regular basis to ensure our data is fresh. Our vast
+                    community of food lovers share their reviews and photos,
+                    so you have all that you need to make an informed choice.
+                </li>
+                <li>
+                    <b>Enabling restaurants to create amazing experiences:</b>
+                    With dedicated engagement and management tools, we're
+                    enabling restaurants to spend more time focusing on food
+                    itself, which translates directly to better dining
+                    experiences.
+                </li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
