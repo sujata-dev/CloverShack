@@ -1,0 +1,163 @@
+
+<!-- topmost navigation bar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" onload=displayTime()>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+                    data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="cs.png" target="_blank">
+                CloverShack
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="CloverShack.htm" target="_top">Home</a>
+                </li>
+                <li>
+                    <a href="GetStarted.htm" target="_top" onclick=
+                    "Materialize.showStaggeredList('#staggered-test')">
+                        Get Started
+                    </a>
+                </li>
+                <li>
+                    <a href="AbtUs.htm" target="_top">About Us</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a role="button" data-toggle="modal"
+                                    data-target="#signupModal">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Sign Up
+                    </a>
+                </li>
+                <li>
+                    <a role="button" data-toggle="modal"
+                                    data-target="#loginModal">
+                        <span class="glyphicon glyphicon-log-in"></span>
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a role="button" data-toggle="modal"
+                                    data-target="#feedbackModal">
+                        <span class="glyphicon glyphicon glyphicon-envelope">
+                        </span>
+                        Give Feedback
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- sign up modal -->
+<div class="modal fade" id="signupModal" role="dialog">
+<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- '&times;' stands for × in html -->
+            <button type="button" class="close" data-dismiss="modal">
+                &times;
+            </button>
+            <h4 class="modal-title">Create a New Account</h4>
+        </div>
+        <div class="modal-body">
+            <p><center>
+                Come join the CloverShack community! Let's set up your account.
+            </center></p>
+            <input id="username" type="text" class="form-control"
+                                name="username" placeholder="username">
+            <br>
+            <input id="email" type="text" class="form-control"
+                                name="email" placeholder="email">
+            <br>
+            <input id="password" type="text" class="form-control"
+                                name="password" placeholder="password">
+            <br>
+            <p>By submitting this form you agree to CloverShack's
+            <a href="terms.htm" target="_blank">Terms of Service</a></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+                Join CloverShack!
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- login modal -->
+<div class="modal fade" id="loginModal" role="dialog">
+<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- '&times;' stands for × in html -->
+            <button type="button" class="close" data-dismiss="modal">
+                &times;
+            </button>
+            <h4 class="modal-title">Log In</h4>
+        </div>
+        <div class="modal-body">
+            <p><center>Log in to use your CloverShack account.</center></p>
+            <form>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-user"></i>
+                    </span>
+                    <input id="email" type="text" class="form-control"
+                                    name="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-lock"></i>
+                    </span>
+                    <input id="password" type="text" class="form-control"
+                                    name="password" placeholder="password">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Log In</button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- feedback modal -->
+<div class="modal fade" id="feedbackModal" role="dialog">
+<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- '&times;' stands for × in html -->
+            <button type="button" class="close" data-dismiss="modal">
+                &times;
+            </button>
+            <h4 class="modal-title">Provide your valuable feedback in here</h4>
+        </div>
+        <div class="modal-body">
+            <input id="feedbackEmail" type="text" class="form-control"
+                name="feedbackEmail" placeholder="Enter your email">
+            <p> </p>
+            <textarea class="form-control" rows="5" id="feedback"
+                placeholder="Enter your feedback"></textarea>
+            <p> </p>
+            <p align="right">
+            <button type="button" class="btn btn-primary">Submit</button>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
